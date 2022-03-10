@@ -121,7 +121,7 @@ def cropper_masks(org_image_path, mask_array):
 
 def new_method(outputs, image_path):
 
-  need = [56, 57, 59, 60, 61, 62, 63, 68, 69, 71, 72, 75]
+  need = [28, 56, 57, 59, 60, 61, 62, 63, 68, 69, 71, 72, 75]
   idxofClass = [i for i, x in enumerate(list(outputs['instances'].pred_classes)) if x in need]
 
   o = outputs["instances"]
